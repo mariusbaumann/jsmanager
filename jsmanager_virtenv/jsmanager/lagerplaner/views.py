@@ -4,7 +4,7 @@ from django.template import RequestContext, loader
 
 
 def index(request):
-    template = loader.get_template('jsmanager/index.html')
+    template = loader.get_template('lagerplaner/index.html')
     context = RequestContext(request, {
             
         })
