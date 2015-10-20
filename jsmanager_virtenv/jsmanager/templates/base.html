@@ -1,3 +1,5 @@
+{% load staticfiles %}
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -15,31 +17,31 @@
 
 
 	<!--Bootstrap Stylesheet [ REQUIRED ]-->
-	<link href="../static/css/bootstrap.min.css" rel="stylesheet">
+	<link href="{% static 'template/css/bootstrap.min.css' %}" rel="stylesheet">
 
 
 	<!--Nifty Stylesheet [ REQUIRED ]-->
-	<link href="css/nifty.min.css" rel="stylesheet">
+	<link href="{% static 'template/css/nifty.min.css' %}" rel="stylesheet">
 
 	
 	<!--Font Awesome [ OPTIONAL ]-->
-	<link href="plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+	<link href="{% static 'template/plugins/font-awesome/css/font-awesome.min.css' %}" rel="stylesheet">
 
 
 	<!--Animate.css [ OPTIONAL ]-->
-	<link href="plugins/animate-css/animate.min.css" rel="stylesheet">
+	<link href="{% static 'template/plugins/animate-css/animate.min.css' %}" rel="stylesheet">
 
 
 	<!--Morris.js [ OPTIONAL ]-->
-	<link href="plugins/morris-js/morris.min.css" rel="stylesheet">
+	<link href="{% static 'template/plugins/morris-js/morris.min.css' %}" rel="stylesheet">
 
 
 	<!--Switchery [ OPTIONAL ]-->
-	<link href="plugins/switchery/switchery.min.css" rel="stylesheet">
+	<link href="{% static 'template/plugins/switchery/switchery.min.css' %}" rel="stylesheet">
 
 
 	<!--Bootstrap Select [ OPTIONAL ]-->
-	<link href="plugins/bootstrap-select/bootstrap-select.min.css" rel="stylesheet">
+	<link href="{% static 'template/plugins/bootstrap-select/bootstrap-select.min.css' %}" rel="stylesheet">
 
 
 	<!--Demo script [ DEMONSTRATION ]-->
@@ -52,8 +54,8 @@
 	<!--=================================================-->
 
 	<!--Page Load Progress Bar [ OPTIONAL ]-->
-	<link href="plugins/pace/pace.min.css" rel="stylesheet">
-	<script src="plugins/pace/pace.min.js"></script>
+	<link href="{% static 'template/plugins/pace/pace.min.css' %}" rel="stylesheet">
+	<script src="{% static 'template/plugins/pace/pace.min.js' %}"></script>
 
 
 	
@@ -97,7 +99,7 @@
 				<!--================================-->
 				<div class="navbar-header">
 					<a href="index.html" class="navbar-brand">
-						<img src="img/logo.png" alt="Nifty Logo" class="brand-icon">
+						<img src="{% static 'template/img/logo.png' %}" alt="Nifty Logo" class="brand-icon">
 						<div class="brand-title">
 							<span class="brand-text">Nifty</span>
 						</div>
