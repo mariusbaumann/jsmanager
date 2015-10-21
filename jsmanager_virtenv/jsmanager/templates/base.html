@@ -6,7 +6,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>JS-Manger</title>
+	<title>Jungschiplaner</title>
 
 
 	<!--STYLESHEET-->
@@ -101,7 +101,7 @@
 					<a href="index.html" class="navbar-brand">
 						
 						<div class="brand-title">
-							<span class="brand-text">JS-Manager</span>
+							<span class="brand-text">Jungschiplaner</span>
 						</div>
 					</a>
 				</div>
@@ -615,8 +615,8 @@
 
 					<!--Shortcut buttons-->
 					<!--================================-->
-					<!--
-                                        <div id="mainnav-shortcut">
+                                        <!--
+					<div id="mainnav-shortcut">
 						<ul class="list-unstyled">
 							<li class="col-xs-4" data-content="Additional Sidebar">
 								<a id="demo-toggle-aside" class="shortcut-grid" href="#">
@@ -624,7 +624,7 @@
 								</a>
 							</li>
 							<li class="col-xs-4" data-content="Notification">
-								<a id="alert" class="shortcut-grid" href="#">
+								<a id="demo-alert" class="shortcut-grid" href="#">
 									<i class="fa fa-bullhorn"></i>
 								</a>
 							</li>
@@ -648,49 +648,114 @@
 								<ul id="mainnav-menu" class="list-group">
 						
 									<!--Category name-->
+                                                                        <!--Zusammenfassungen und Userspezifische Informationen-->
 									<li class="list-header">Allgemein</li>
 						
 									<!--Menu list item-->
-									<li class="active-link">
+                                                                        <!--Die Pinnwand zeigt alle Aktivitäten live an und fasst die Wichtisgestn informationen Zusammen-->
+									<li class="link">
 										<a href="index.html">
 											<i class="fa fa-dashboard"></i>
 											<span class="menu-title">
-												<strong>Dashboard</strong>
+												<strong>Pinnwand</strong>
 											</span>
 										</a>
 									</li>
                                                                         
+									<!--Menu list item-->
+                                                                        <!--Im ToDo siehst du deine persönlichen ToDos zusammengefasst aus allen bereichen Lager Nachmitagge usw-->
+									<li class="link">
+										<a href="index.html">
+											<i class="fa fa-dashboard"></i>
+											<span class="menu-title">
+												<strong>ToDo</strong>
+											</span>
+										</a>
+									</li>
+                                                                        
+                                                                        <!--Hier sieht man alle Files deiner JS-Gruppe. Du kannst auch deine Dropbox oder Google-Drive mit diesem Tool verbinden und diese Events oder Lagerblöcken zuordnen.-->
+									<li class="link">
+										<a href="index.html">
+											<i class="fa fa-dashboard"></i>
+											<span class="menu-title">
+												<strong>Files</strong>
+											</span>
+										</a>
+									</li>
+						
+						                        <li class="list-divider"></li>
+						
 									<!--Category name-->
+                                                                        <!--Im Jahresplanungsbereich, kann ein Jungscharjahr geplant werden. Nachmittage und Events werden hier eingetragen. -->
 									<li class="list-header">Jahresplanung</li>
 						
 									<!--Menu list item-->
-									<li class="active-link">
+                                                                        <!--Im Jahresplan sind alle JSrelevanten Termine, Nachmittage und Events eingetragen. Nationale und Regionale events werden hier automatisch angezeigt. -->
+									<li class="link">
 										<a href="index.html">
-											<i class="fa fa-calendar"></i>
-											<span class="menu-title">
-												<strong>Jahresplan</strong>
-											</span>
+											<i class="fa fa-dashboard"></i>
+											<span class="menu-title">Jahresplan</span>
+										</a>
+									</li>
+                                                                        <!-- [Finanzchef RW] [Leiter R] -->
+									<li class="link">
+										<a href="index.html">
+											<i class="fa fa-dashboard"></i>
+											<span class="menu-title">Finanzen</span>
+										</a>
+									</li>
+						
+									<li class="list-divider"></li>
+						
+									<!--Category name-->
+                                                                        <!--Im Bereich Lagerplanung kannst du ganz einfach dein Gesamtes Lager planen. Lager können auch mit anderen JS-Teams verbunden und gemeinsam bearbeitet werden.-->
+									<li class="list-header">Lagerplanung</li>
+                                                                        
+                                                                        <!-- [Hauptleitung RW] Wenn du Hauptleiter eines Lagers sein möchtest, kannst du hier ein neues Lager eröffnen, dein Team verwalten Amtli und Rollen Definieren. -->
+                                                                        <li class="link">
+										<a href="index.html">
+											<i class="fa fa-dashboard"></i>
+											<span class="menu-title">Meine Lager </span>
+										</a>
+									</li>
+                                                                        <!-- [Hauptleitung RW][Lagerleiter RW] Der Picasso ist das Herzstück des Lagers. Hier sind Alle Blöcke in einer Wochenübersicht aufgelistet. Du kannst hier die Dossiers bearbeiten und abfertigen.-->
+                                                                        <li class="link">
+										<a href="index.html">
+											<i class="fa fa-dashboard"></i>
+											<span class="menu-title">Picasso</span>
 										</a>
 									</li>
                                                                         
-									<!--Category name-->
-									<li class="list-header">Lagerplanung</li>
-									
-									<!--Menu list item-->
-									<li class="active-link">
+                                                                        <!-- [Hauptleitung RW][Lagerleiter R(W)] In den Grundinformationen stehen die Wichtigesten Dinge zum Lager. Koordinaten, Adresse, Rollen, Amtli -->
+									<li class="link">
 										<a href="index.html">
-											<i class="fa fa-columns"></i>
-											<span class="menu-title">
-												<strong>Picasso</strong>
-											</span>
+											<i class="fa fa-dashboard"></i>
+											<span class="menu-title">Grundinformationen</span>
 										</a>
 									</li>
+                                                                        
+                                                                        <!-- [Hauptleitung RW][Finanzchef RW] [Lagerleiter (R)]  In den Finanzen kannst du ein Budget erstellen und nach dem Lager eine Abrechnung. Kosten eines Blocks können hier genehmigt werden. -->
+									<li class="link">
+										<a href="index.html">
+											<i class="fa fa-dashboard"></i>
+											<span class="menu-title">Finanzen</span>
+										</a>
+									</li>
+                                                                        
+                                                                        <!-- [Hauptleitung RW][Matchef RW] [Lagerleiter (R)] Hier siehst du alles Material, welches fürs lager benötigt wird. Die Matlisten in den Blöcken werden hier zusammengefasst. (JS-Materialbestellungen können ausgelöst werden.)   -->
+									<li class="link">
+										<a href="index.html">
+											<i class="fa fa-dashboard"></i>
+											<span class="menu-title">Matliste</span>
+										</a>
+									</li>
+                                                                        
+                                                                        
+                                                                        
+						
+									
 
 								</ul>
-
-
-								
-
 							</div>
 						</div>
 					</div>
@@ -1174,7 +1239,7 @@
 								<div class="demo-theme-head"></div>
 								<div class="demo-theme-nav"></div>
 							</a>
-							<a href="#" class="demo-theme demo-a-well-red add-tooltip" data-theme="theme-well-red" data-type="a" data-title="(A). Well Red">
+				c			<a href="#" class="demo-theme demo-a-well-red add-tooltip" data-theme="theme-well-red" data-type="a" data-title="(A). Well Red">
 								<div class="demo-theme-brand"></div>
 								<div class="demo-theme-head"></div>
 								<div class="demo-theme-nav"></div>
