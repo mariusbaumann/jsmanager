@@ -12,6 +12,9 @@
 	<!--STYLESHEET-->
 	<!--=================================================-->
 
+        <!--JSM own css customs-->
+        <link href="{% static 'css/jsmbase.css' %}" rel="stylesheet" >
+
 	<!--Open Sans Font [ OPTIONAL ] -->
  	<link href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&amp;subset=latin" rel="stylesheet">
 
@@ -47,7 +50,8 @@
 	<!--Demo script [ DEMONSTRATION ]-->
 	<link href="{% static 'css/demo/nifty-demo.min.css' %}" rel="stylesheet">
 
-
+        
+        
 
 
 	<!--SCRIPT-->
@@ -88,6 +92,9 @@
 <!--You may remove all ID or Class names which contain "demo-", they are only used for demonstration. -->
 
 <body>
+        
+        
+        
 	<div id="container" class="effect mainnav-lg">
 		
 		<!--NAVBAR-->
@@ -259,7 +266,7 @@
 						<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 						<li class="tgl-menu-btn">
 							<a class="mainnav-toggle" href="#">
-								<i class="fa fa-question-circle"></i>
+								<i id="help-toggle-button" class="fa fa-question-circle add-tooltip" data-placement="bottom" data-original-title="<h4 class='text-thin'>Hilfemodus</h4><p style='width:150px'>Das Fragezeichen aktiviert den Hilfemodus, Dadurch werden überall zusätzliche Fragezeichen eingeblendet, die dir Hinweise zu den Funktionen geben.</p><p>Klicke erneut auf dieses Zeichen um den Hilfemodus zu beenden</p>" data-html="true"></i>
 							</a>
 						</li>
 						<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -328,7 +335,7 @@
 									<!--Menu list item-->
                                                                         <!--Die Pinnwand zeigt alle Aktivitäten live an und fasst die Wichtisgestn informationen Zusammen-->
 									<li class="link">
-										<a href="index.html">
+										<a href="{% url 'lagerplaner:index' %}">
 											<i class="fa fa-dashboard"></i>
 											<span class="menu-title">
 												<strong>Pinnwand</strong>
@@ -339,10 +346,10 @@
 									<!--Menu list item-->
                                                                         <!--Im ToDo siehst du deine persönlichen ToDos zusammengefasst aus allen bereichen Lager Nachmitagge usw-->
 									<li class="link">
-										<a href="index.html">
+										<a href="{% url 'lagerplaner:todoo' %}">
 											<i class="fa fa-check-square-o"></i>
 											<span class="menu-title">
-												<strong>ToDo</strong>
+												ToDo
 											</span>
 										</a>
 									</li>
@@ -1074,7 +1081,9 @@
 	
 	<!--JAVASCRIPT-->
 	<!--=================================================-->
-
+        
+        
+        
 	<!--jQuery [ REQUIRED ]-->
 	<script src="{% static 'js/jquery-2.1.1.min.js' %}"></script>
 
@@ -1119,7 +1128,12 @@
 	<!--Specify page [ SAMPLE ]-->
 	<script src="{% static 'js/demo/dashboard.js' %}"></script>
 
-	
+        <script type="text/javascript">
+        $(document).ready(function() {
+            $('#todootable').DataTable();
+        } );
+        
+        </script>
 	<!--
 
 	REQUIRED

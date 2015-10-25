@@ -19,7 +19,8 @@ from django.contrib import admin
 #from jsmanager import urls 
 
 urlpatterns = [
-        url(r'^$', include('lagerplaner.urls', namespace="lagerplaner")),
+       # url(r'^$', include('lagerplaner.urls', namespace="lagerplaner")),
         url(r'^lagerplaner/', include('lagerplaner.urls', namespace="lagerplaner")),
+        url(r'^$', include('lagerplaner.urls', namespace="lagerplaner")),
         url(r'^admin/', include(admin.site.urls)),
 ]

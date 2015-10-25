@@ -105,5 +105,5 @@ STATIC_ROOT = '/Users/baumanma/GIT/jsmanager/jsmanager_virtenv/jsmanager/static/
 
 STATICFILES_DIRS = (
     os.path.join(BASE_DIR, 'static/template'),
-    os.path.join(BASE_DIR, 'static/jscss'),
+    os.path.join(BASE_DIR, 'static/css'),
 )
