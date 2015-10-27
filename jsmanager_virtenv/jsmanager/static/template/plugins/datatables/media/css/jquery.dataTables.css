@@ -196,7 +196,7 @@ table.dataTable.order-column.hover tbody tr.even:hover.selected > .sorting_3 {
   background-color: #a4b2cb;
 }
 table.dataTable.no-footer {
-  border-bottom: 1px solid #111111;
+  border-bottom: none;
 }
 table.dataTable.nowrap th, table.dataTable.nowrap td {
   white-space: nowrap;
@@ -301,6 +301,8 @@ table.dataTable td {
   clear: both;
   *zoom: 1;
   zoom: 1;
+  width: 100%;
+  overflow-x: hidden;
 }
 .dataTables_wrapper .dataTables_length {
   float: left;

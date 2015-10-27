@@ -8,20 +8,12 @@
  			<!--===================================================-->
  			<div id="content-container">
                                 
+                                
+                                
  				<!--Page Title-->
  				<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
  				<div id="page-title">
  					<h1 class="page-header text-overflow">To Doo</h1>
-
- 					<!--Searchbox-->
- 					<div class="searchbox">
- 						<div class="input-group custom-search-form">
- 							<input type="text" class="form-control" placeholder="Search..">
- 							<span class="input-group-btn">
- 								<button class="text-muted" type="button"><i class="fa fa-search"></i></button>
- 							</span>
- 						</div>
- 					</div>
  				</div>
  				<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
  				<!--End page title-->
@@ -49,29 +41,16 @@
  												</div>
  											</div>
  											<div class="col-sm-6 table-toolbar-right">
- 												<div class="form-group">
- 													<input id="todootable" type="text" placeholder="Search" class="form-control" aria-controls="todootable" autocomplete="off">
+ 												<div class="dataTables_filter">
+ 													<input id="search-todo-datatable" type="search" placeholder="Search" class="form-control input-sm" aria-controls="richtable" >
  												</div>
- 												<div class="btn-group">
- 													<div class="btn-group">
- 														<button data-toggle="dropdown" class="btn btn-default dropdown-toggle">
- 															<i class="fa fa-cog"></i>
- 															<span class="caret"></span>
- 														</button>
- 														<ul role="menu" class="dropdown-menu dropdown-menu-right">
- 															<li><a href="#">Action</a></li>
- 															<li><a href="#">Another action</a></li>
- 															<li><a href="#">Something else here</a></li>
- 															<li class="divider"></li>
- 															<li><a href="#">Separated link</a></li>
- 														</ul>
- 													</div>
- 												</div>
+ 												
+ 										
  											</div>
  										</div>
  									</div>
- 									<div class="table-responsive">
- 										<table id="todootable" class="dataTable table table-striped table-hover">
+ 									<div id="richtablecontainer" class="table-responsive">
+ 										<table id="richtable" class="dataTable table table-striped table-hover">
  											<thead>
  												<tr>
  													<th style="width:4ex">ID</th>

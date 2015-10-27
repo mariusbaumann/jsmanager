@@ -49,6 +49,8 @@
 
 	<!--Demo script [ DEMONSTRATION ]-->
 	<link href="{% static 'css/demo/nifty-demo.min.css' %}" rel="stylesheet">
+        
+        <link href="{% static 'plugins/datatables/media/css/jquery.dataTables.css' %}" rel="stylesheet">
 
         
         
@@ -1127,12 +1129,22 @@
 
 	<!--Specify page [ SAMPLE ]-->
 	<script src="{% static 'js/demo/dashboard.js' %}"></script>
+        
+        <!--DataTables [ SAMPLE ]-->
+        <script src="{% static 'plugins/datatables/media/js/jquery.dataTables.js' %}"></script>
+        <script src="{% static 'plugins/datatables/media/js/dataTables.bootstrap.js' %}"></script>
+        <script src="{% static 'plugins/datatables/extensions/Responsive/js/dataTables.responsive.min.js' %}"></script>
 
         <script type="text/javascript">
         $(document).ready(function() {
-            $('#todootable').DataTable();
+            oTable = $('#richtable').DataTable( {
+                    paging: false,
+                    "sDom": "t"
+            } );
+            $('#search-todo-datatable').keyup(function(){
+                  oTable.search($(this).val()).draw() ;
+                  })
         } );
-        
         </script>
 	<!--
 
